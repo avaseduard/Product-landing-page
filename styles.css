@@ -1,0 +1,225 @@
+:root {
+  --button-color: orange;
+  --nav-link-color: darkslategrey;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+* {
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: antiquewhite;
+  top: 0;
+  padding-bottom: 1rem;
+}
+
+#header-img {
+  margin: 0 5rem;
+  max-height: 5rem;
+  width: auto;
+  height: auto;
+}
+
+#nav-bar {
+  width: 100%;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+.nav-link:hover {
+  filter: brightness(150%);
+}
+
+.product-section {
+  padding-top: 5rem;
+}
+
+.product {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#email,
+#submit {
+  display: block;
+  margin: 0.7rem auto;
+}
+
+#email {
+  width: 250px;
+  height: 0.5rem;
+  padding: 0.5rem;
+}
+
+#submit {
+  width: 150px;
+  padding: 0.5rem;
+  background-color: var(--button-color);
+  border: transparent;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  filter: brightness(150%);
+}
+
+.bennefits-container {
+  display: grid;
+  grid-template-columns: 15% 45%;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+i {
+  font-size: 2.5rem;
+  color: var(--button-color);
+  margin: 1rem 0 0 0;
+}
+
+.bennefits-title {
+  font-size: 1.2rem;
+  margin: 1rem 0 0 0;
+}
+
+.bennefits-text {
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+iframe {
+  display: block;
+  margin: 2rem auto;
+}
+
+#pricing {
+  display: grid;
+  grid-template-columns: 19% 19% 19%;
+  gap: 1rem;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+#pricing > div > h1 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+  background-color: grey;
+}
+
+#pricing > div > h2 {
+  font-size: 1.2rem;
+  color: red;
+}
+
+#pricing > div > p {
+  font-size: 0.8rem;
+}
+
+#pricing > div > input {
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+#pricing > div > input:hover {
+  filter: brightness(150%);
+}
+
+.pricing-details {
+  text-align: center;
+}
+
+#pricing > div {
+  border: 1px solid black;
+}
+
+footer {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  background-color: grey;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+footer > nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+.nav-link-2 {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+.nav-link-2:hover {
+  filter: brightness(150%);
+}
+
+footer > p {
+  font-size: 0.7rem;
+  color: var(--nav-link-color);
+  text-align: end;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  iframe {
+    max-width: 300px;
+  }
+
+  #pricing {
+    display: grid;
+    grid-template-columns: 50%;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  iframe {
+    max-width: 400px;
+  }
+
+  #pricing {
+    display: grid;
+    grid-template-columns: 50%;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
